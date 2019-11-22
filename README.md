@@ -41,9 +41,9 @@ public enum StudentList implements DocHeader {
     }
 }
 ```
-The above file tries to describe the header fields of the expected CSV file. For every CSV file you want to process using the utility you need to create such an Enumerated Type which implements `DocHeader`
+The above file tries to describe the header fields of the expected CSV file. For every CSV file you want to process using the utility, you need to create such an Enumerated Type which implements `DocHeader`
 
-Once you are done with the above you can read the file contents as below(achieved with the help of [commons-csv](https://commons.apache.org/proper/commons-csv/))
+Once you are done with the above, you can read the file contents as below(achieved with the help of [commons-csv](https://commons.apache.org/proper/commons-csv/))
 
 ```java
 List<CSVRecord> rows = com.horcrux.util.csvutil.CsvHelper.getCSVLineItems(csvFile, StudentList.class);
@@ -53,7 +53,7 @@ rows.forEach(row -> {
             });
 ```
 
-To impose any rules to the processing CSV file provided such as validations on fields(*Type*, *Value* of a  field expected), we can define cell processors as below( provided using [super-csv](https://github.com/super-csv/super-csv) ).
+To impose any rules of validation to the CSV file provided such as validations on fields(*Type*, *Value* of a  field expected), we can define cell processors as below( implemented using [super-csv](https://github.com/super-csv/super-csv) ).
 ```java
 public class CSVConstants {  
   public static final CellProcessor[] PROCESSORS_STUDENT_LIST = new CellProcessor[]{  
@@ -65,15 +65,15 @@ public class CSVConstants {
     };    
   }
 ```
-For the above we need to ensure the column order in which the *CSV* file will be provided.
-Sample CSV file may look like below
+For the above, we need to ensure the column order in which the *CSV* file will be provided.
+Sample CSV file for the above processor may look like below
 
 ```csv
 Student Name,Department,Attendence,Joining Date,Roll Number
 Test,,65.3,20190213,23
 ```
 
-To specify the processors to validate a file, you can proceed as below
+To specify the processors to validate a CSV file, you can write as below
 ```java
 try {  
     com.horcrux.util.csvutil.CsvHelper.validateRows(csvFile, CSVConstants.PROCESSORS_STUDENT_LIST)  
