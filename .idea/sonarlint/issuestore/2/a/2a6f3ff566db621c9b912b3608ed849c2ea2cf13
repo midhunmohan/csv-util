@@ -1,6 +1,0 @@
-
-jsquid:S1192f"GDefine a constant instead of duplicating this literal "reason" 5 times.(—¢ıÿÿÿÿ8¬÷¸ğè-
-Osquid:S16129",Replace this lambda with a method reference.(©³Ààøÿÿÿÿ8¬÷¸ğè-
-¹%squid:RedundantThrowsDeclarationCheckE"€Remove the declaration of thrown exception 'org.supercsv.exception.SuperCsvCellProcessorException' which is a runtime exception.(±´—¨8¬÷¸ğè-
-nsquid:S2095G"KUse try-with-resources or close this "CsvListReader" in a "finally" clause.(™äÌÎşÿÿÿÿ8¬÷¸ğè-
-rsquid:S2095("OUse try-with-resources or close this "InputStreamReader" in a "finally" clause.(Éªıòüÿÿÿÿ8¬÷¸ğè-

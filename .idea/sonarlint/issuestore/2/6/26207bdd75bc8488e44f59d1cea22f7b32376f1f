@@ -1,7 +1,0 @@
-
-Tsquid:UselessImportCheck")Remove this unused import 'java.net.URI'.(Φ¦¨°8―ΎΑρθ-
-Osquid:S1068",Remove this unused "errorKey" private field.(ώ»ιΤωÿÿÿÿ8―ΎΑρθ-
-Hsquid:S1948"*Make "paramMap" transient or serializable.(Πηυπ8―ΎΑρθ-
-Lsquid:S1068
-".Remove this unused "entityName" private field.(ά¶ƒ8―ΎΑρθ-
-?squid:S1165"!Make this "paramMap" field final.(Πηυπ8―ΎΑρθ-
